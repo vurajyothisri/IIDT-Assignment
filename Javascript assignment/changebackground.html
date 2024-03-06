@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+    <style>
+        body{
+            background-color: #59CC83;
+        }
+        .center{
+          
+          width:500px;
+          margin :60px auto;
+          text-align: center;
+          
+
+        }
+        .backgroundcolor{
+            background-color: black;
+            color:white;
+            padding:10px;
+            font-weight:bolder;
+            font-size: 30px;
+            text-align: center;
+        }
+        .color-code{
+            color:#569dc9
+        }
+        .button{
+            background-color: transparent;
+            border: 2px solid black;
+            color:black;
+            padding:10px 15px;
+            font-weight:900;
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="center">
+        <h1 class="backgroundcolor">Background Color :  <span class="color-code" id="content">#59CC83</span></h1>
+        <button class="button" id="button">CLICK ME</button>
+    </div>
+        
+        <script>
+          function randomcolor_generator()
+          {
+            var color='ABCDEFabcdef0123456789'
+            var finale_color='#'
+           for(let i=0;i<=5;i++)
+           {
+                  var randomIndex = Math.floor(Math.random() * color.length);
+                finale_color+=color.charAt(randomIndex)
+            }
+    
+    
+    // Return the character at the random index
+               return finale_color;
+          }
+          let button=document.querySelector('#button')
+          let color_name=document.querySelector('#content')
+          button.addEventListener('click',function(){
+            let color=randomcolor_generator()
+            document.body.style.backgroundColor=color;
+            color_name.innerHTML=color
+          })
+        </script>
+    
+</body>
+</html>
