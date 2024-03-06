@@ -9,12 +9,11 @@
             background-color: #59CC83;
         }
         .center{
-          
-          width:500px;
-          margin :60px auto;
-          text-align: center;
-          
-
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         .backgroundcolor{
             background-color: black;
@@ -29,28 +28,30 @@
         }
         .button{
             background-color: transparent;
-            border: 2px solid black;
+            border: 1px solid black;
             color:black;
             padding:10px 15px;
-            font-weight:900;
+           
         }
     </style>
     
 </head>
 <body>
-    <div class="center">
+    
+    <div  class="center">
         <h1 class="backgroundcolor">Background Color :  <span class="color-code" id="content">#59CC83</span></h1>
         <button class="button" id="button">CLICK ME</button>
     </div>
+
         
         <script>
           function randomcolor_generator()
           {
-            var color='ABCDEFabcdef0123456789'
+            var color='0123456789ABCDEFabcdef'
             var finale_color='#'
            for(let i=0;i<=5;i++)
            {
-                  var randomIndex = Math.floor(Math.random() * color.length);
+                  var randomIndex = Math.floor(Math.random()*color.length);
                 finale_color+=color.charAt(randomIndex)
             }
     
@@ -62,6 +63,11 @@
           let color_name=document.querySelector('#content')
           button.addEventListener('click',function(){
             let color=randomcolor_generator()
+            if(color=='#000000'){
+                button.style.borderColor='#FFFFFF'
+                button.style.color='#FFFFFF'
+            }
+          
             document.body.style.backgroundColor=color;
             color_name.innerHTML=color
           })
