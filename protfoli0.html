@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+
+    footer {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .project {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .project h2 {
+        margin-top: 0;
+    }
+
+    .project p {
+        margin-bottom: 10px;
+    }
+
+    .contact-info {
+        margin-bottom: 20px;
+    }
+
+    .contact-info ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .contact-info li {
+        margin-bottom: 10px;
+    }
+
+    .contact-form {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+    }
+
+    .contact-form label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        resize: vertical;
+    }
+
+    .contact-form button[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .contact-form button[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    .skills {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .skills ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .skills li {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 4px;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hi, I'm Vura. Jyothisri, a CSE student and I am currently pursuing my CSE at DNR COLLEGE OF ENGINEERING AND TECHNOLOGY.</p>
+        </section>
+
+        <section id="projects">
+            <h1>Projects</h1>
+            <div class="project">
+                <h2>Movie Details Application</h2>
+                <p>I created a React movie details app with search options for both movie ID and name. If a movie isn't found, it shows an error message. It's a straightforward way to get movie info.</p>
+            </div>
+            <div class="project">
+                <h2>Pokemon details application</h2>
+                <p>I made a basic React.js app about Pokémon. When you start it, you see default Pokémon info. If a Pokémon isn't there, it shows an error message. It's a simple way to learn about Pokémon using React..</p>
+            </div>
+            <div class="project">
+                <h2>Recipe Details Application</h2>
+                <p>I've made a React food details app that lets users search by name. If a food isn't found, it shows an error. It's a quick way to find out about different foods</p>
+            </div>
+            <!-- Add more projects -->
+        </section>
+
+        <section id="skills">
+            <h1>Skills</h1>
+            <div class="skills">
+                <ul>
+                    <li>Python</li>
+                    <li>React JS</li>
+                    <li>Basics in SQL</li>
+                    
+                    <!-- Add more skills -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Email: vurajyothisri.com</li>
+                    <li>Phone: 123-456-7890</li>
+                    <li>Address: 123 Street, City, Country</li>
+                </ul>
+            </div>
+            <div class="contact-form">
+                <h2>Contact Form</h2>
+                <form>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 [Your Name]
+    </footer>
+</body>
+</html>

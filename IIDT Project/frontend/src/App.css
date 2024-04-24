@@ -1,0 +1,12 @@
+.Recipe_Container{
+  display:flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  margin:20px 30px;
+}
+.Recipe_Content{
+  display: flex;
+  height: fit-content;
+  gap:70px;  
+}

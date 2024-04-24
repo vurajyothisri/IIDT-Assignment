@@ -1,0 +1,4 @@
+1. **Overview of Web Development**
+
+ans) 
+Web development refers to the process of building, creating, and maintaining websites. It encompasses various tasks, including web design, web content development, client-side/server-side scripting, network security configuration, and more. Web development is important because it allows businesses, organizations, and individuals to establish an online presence, reach a global audience, provide information, sell products or services, and engage with customers or users in an efficient and effective manner. In today's digital age, having a well-designed and functional website is crucial for success in almost any field.
